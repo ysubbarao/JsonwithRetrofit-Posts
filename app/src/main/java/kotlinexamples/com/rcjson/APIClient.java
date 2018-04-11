@@ -12,7 +12,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class APIClient {
 
    // public static final String BASE_URL = "https://jsonplaceholder.typicode.com/";
-   public static final String BASE_URL = "https://jsonplaceholder.typicode.com";
+   //public static final String BASE_URL = "https://jsonplaceholder.typicode.com";
+   public static final String BASE_URL = "https://jsonplaceholder.typicode.com/";
+
     public static Retrofit retrofit;
 
     public static Retrofit getApiClient() {

@@ -33,7 +33,7 @@ public class UserRCAdapter extends RecyclerView.Adapter<UserRCViewHolder> {
     @Override
     public UserRCViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(mainActivity).inflate(R.layout.albumdetails,parent,false);
+        View view = LayoutInflater.from(mainActivity).inflate(R.layout.posts,parent,false);
         UserRCViewHolder userRCViewHolder = new UserRCViewHolder(view);
 
         Log.d(TAG,"userRCViewHolder");
@@ -44,10 +44,9 @@ public class UserRCAdapter extends RecyclerView.Adapter<UserRCViewHolder> {
     @Override
     public void onBindViewHolder(UserRCViewHolder holder, int position) {
 
-        holder.postId.setText(String.valueOf(userList.get(position).getPostId()));
+        holder.userId.setText(String.valueOf(userList.get(position).getUserId()));
         holder.id.setText(String.valueOf(userList.get(position).getID()));
-        holder.name.setText(userList.get(position).getName());
-        holder.email.setText(userList.get(position).getEmail());
+        holder.title.setText(userList.get(position).getTitle());
         holder.body.setText(userList.get(position).getBody());
 
 

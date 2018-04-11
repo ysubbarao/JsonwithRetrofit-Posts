@@ -67,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
         userRCAdapter = new UserRCAdapter(MainActivity.this, userList);
 
 
-       DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(this,DividerItemDecoration.HORIZONTAL );
-       recyclerView.addItemDecoration(dividerItemDecoration);
+       /*DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(this,DividerItemDecoration.HORIZONTAL );
+       recyclerView.addItemDecoration(dividerItemDecoration);*/
 
 
         recyclerView.setAdapter(userRCAdapter);

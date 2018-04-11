@@ -15,16 +15,15 @@ public class UserRCViewHolder extends RecyclerView.ViewHolder {
     public static final String TAG = "message";
 
 
-    TextView postId,id,name,email,body;
+    TextView userId,id,title,body;
 
     public UserRCViewHolder(View itemView) {
         super(itemView);
         Log.d(TAG,"UserRCViewHolder");
 
-        postId    = itemView.findViewById(R.id.postId);
+        userId    = itemView.findViewById(R.id.userId);
         id     = itemView.findViewById(R.id.ID);
-        name   = itemView.findViewById(R.id.name);
-        email     = itemView.findViewById(R.id.email);
+        title   = itemView.findViewById(R.id.title);
         body   = itemView.findViewById(R.id.body);
 
 

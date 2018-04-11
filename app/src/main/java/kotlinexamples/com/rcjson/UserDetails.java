@@ -9,35 +9,28 @@ import com.google.gson.annotations.SerializedName;
 public class UserDetails {
 
 
-    @SerializedName("postId")
-    private int postId;
+    @SerializedName("userId")
+    private int userId;
 
     @SerializedName("id")
     private int ID;
 
-    @SerializedName("name")
-    private  String name;
-
-    @SerializedName("email")
-    private  String email;
+    @SerializedName("title")
+    private  String title;
 
     @SerializedName("body")
     private String body;
 
-    public int getPostId() {
-        return postId;
+    public int getUserId() {
+        return userId;
     }
 
     public int getID() {
         return ID;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getEmail() {
-        return email;
+    public String getTitle() {
+        return title;
     }
 
     public String getBody() {

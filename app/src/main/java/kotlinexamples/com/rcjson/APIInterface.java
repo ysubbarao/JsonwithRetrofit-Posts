@@ -13,6 +13,8 @@ import retrofit2.http.POST;
 public interface APIInterface {
 
     //@POST("comments?postId=1")
-    @GET("/comments?postId=1")
+    //  @GET("/comments?postId=1")
+
+    @GET("posts")
     Call<ArrayList<UserDetails>> getUserDetails();
 }
